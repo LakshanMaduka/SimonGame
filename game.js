@@ -92,7 +92,5 @@ function animatePress(currentColor){
     function startOver(){
         level =0;
         gamePattern=[];
-        userClickedPattern=[];
-        $("h1").text("press a key to start");
-        nextSequence();
+        started=false;
     }
