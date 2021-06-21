@@ -15,7 +15,7 @@ $(document).keypress(function(){
         started = true;
       }
 
-      startOver();
+      
 
 
 });
@@ -39,7 +39,7 @@ $(".btn").click(function (){
 
 function playGame(currentLevel){
     if(gamePattern[currentLevel]===userClickedPattern[currentLevel]){
-    console.log("success");
+    
     if (userClickedPattern.length === gamePattern.length){
 
         //5. Call nextSequence() after a 1000 millisecond delay.
@@ -56,7 +56,7 @@ function playGame(currentLevel){
             $("body").removeClass("game-over");
 
         },200);
-        
+        startOver();
     }
 }
 
